@@ -34,7 +34,7 @@ def main():
     text=input("Enter I or F: ")
     if "F" in text:
         filename = input("Enter file name: ") 
-        with open(file) as f:
+        with open(filename) as f:
                 n=int(f.readline())
                 data=list(map(int,f.readline().split()))
         
