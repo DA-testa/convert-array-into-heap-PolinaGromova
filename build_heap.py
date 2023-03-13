@@ -36,8 +36,9 @@ def main():
     # TODO : add input and corresponding checks
     text=input("Enter I or F: ")
     if "F" in text:
-        filename = input("Enter file name: ") 
-        with open(filename) as f:
+        filename = input("Enter file name: ")   
+        file='./test/'+filename
+        with open(file) as f:
                 n=int(f.readline())
                 data=list(map(int,f.readline().split()))
         
