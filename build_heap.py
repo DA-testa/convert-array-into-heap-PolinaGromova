@@ -25,6 +25,9 @@ def build_heap(data):
                 i=j
             else: break    
 
+    if len(swaps)>4*len(data):
+        raise Exception("The number of swaps is greater than 4n")        
+
     return swaps
 
 
@@ -51,8 +54,7 @@ def main():
     swaps = build_heap(data)
 
     # TODO: output how many swaps were made, 
-    if len(swaps)>4*len(data):
-        print("The number of swaps is greater than 4n")
+    
 
 
     print(len(swaps))
